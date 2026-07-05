@@ -29,7 +29,7 @@ int main()
     char *p0;
     p0 = (char *)j; // typecasting
     cout << "Size of char " << sizeof(char) << " Bytes\n";
-    cout << "Address of p0 " << &p0 << "\n";
-    cout << "Address-void of p0 " << (void *)p0 << "\n";
+    cout << "Address of p0 " << &p0 << "\n";             // very important : p0 as another address in which typecasting occurs there
+    cout << "Address-void of p0 " << (void *)p0 << "\n"; // prints address of b
     cout << "Value of p0 " << *p0 << "\n";
 }
